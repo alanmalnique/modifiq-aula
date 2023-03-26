@@ -29,7 +29,7 @@ var iceConfig = {
     ]
 }
 
-var signalingServer = 'yoursignalignserver';
+var signalingServer = 'http://127.0.0.1:4000';
 
 ModifiQApp.run(function($rootScope, $http, webRequest, localService, $interval, $location) {
     $rootScope.pagina = '';
