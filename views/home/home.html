@@ -1,0 +1,26 @@
+<div class="auth-wrapper">
+	<div class="auth-content">
+		<div class="card">
+			<div class="row align-items-center text-center">
+				<div class="col-md-12">
+					<div class="card-body">
+						<img src="images/logo-vertical.png" width="120" alt="" class="img-fluid mb-12">
+						<p class="lead m-t-20">Selecione sua câmera e microfone para entrar na aula:</p>
+						<button class="btn btn-block btn-primary m-t-20" id="habilitar-camera" ng-show="show_btncam" ng-click="habilitaCamera()">Habilitar Câmera</button>
+						<button class="btn btn-block btn-primary m-t-20" id="habilitar-microfone" ng-show="show_btnmic" ng-click="habilitaMicrofone()">Habilitar Microfone</button>
+                        <select class="form-control" style="display:none;" id="media" onchange="selecionaCameraHome()">
+                            <option value="">Selecione a câmera</option>
+                            <option ng-repeat="item in medias" value="{{item.value}}">{{item.text}}</option>
+                        </select>
+                        <select class="form-control" style="margin-top: 20px; display: none;" id="microphone" onchange="selecionaMicrofoneHome()">
+                            <option value="">Selecione o microfone</option>
+                            <option ng-repeat="item in microphones" value="{{item.value}}">{{item.text}}</option>
+                        </select>
+						<video id="video" class="video-prepara" autoplay playsinline muted></video>
+						<button class="btn btn-block btn-primary m-t-20" id="entrar" style="display:none;" ng-click="entrar()">{{tipo == 1 ? 'Começar Aula' : 'Acessar Aula'}}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

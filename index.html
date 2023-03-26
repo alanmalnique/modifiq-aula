@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>ModifiQ - Aula</title>
+	<!-- CSS Geral -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="node_modules/sweetalert/lib/sweet-alert.css" rel="stylesheet" type="text/css">
+	<!-- JS Geral -->
+	<script type="text/javascript" src="js/adapter.js"></script>
+    <script type="text/javascript" src="js/theme/vendor-all.min.js"></script>
+    <script type="text/javascript" src="js/theme/plugins/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/theme/ripple.js"></script>
+    <script type="text/javascript" src="js/theme/pcoded.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular.ptbr.js"></script>
+	<script type="text/javascript" src="js/angular.route.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-sweetalert/SweetAlert.min.js"></script>
+    <script type="text/javascript" src="node_modules/sweetalert/lib/sweet-alert.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/services.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<!-- Páginas -->
+	<script type="text/javascript" src="views/home/home.js"></script>
+	<script type="text/javascript" src="views/aula/aula.js"></script>
+	</head>
+	<body ng-app="ModifiQApp" ng-controller="indexController">
+		<div class="loading">
+			<div class="spinner-grow text-primary" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		<ng-view></ng-view>
+	</body>
+</html>

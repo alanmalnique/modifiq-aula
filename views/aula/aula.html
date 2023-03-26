@@ -1,0 +1,16 @@
+<div class="header">
+	<img src="../../images/logo-horizontal-color.png" />
+	<div class="btn" ng-show="tipo == 1" ng-click="encerrada ? fechar() : encerrar()">{{encerrada ? 'Fechar Janela' : 'Encerrar Aula'}}</div>
+</div>
+<div class="videoconferencia">
+	<div class="videos-alunos" id="videos-alunos">
+		<div class="videos">
+			<video id="video-local" autoplay playsinline muted></video>
+			<div class="legenda">Seu Vídeo</div>
+		</div>
+		<div class="videos" ng-repeat="peer in peers">
+			<video id="video-{{peer.id}}" autoplay playsinline muted controls></video>
+			<div class="legenda">{{peer.nome}}</div>
+		</div>
+	</div>
+</div>
