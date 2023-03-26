@@ -1,4 +1,4 @@
-# ModfiQ - Aula
+# ModfiQ - Class Panel
 This project contains the ModifiQ class to watch the live stream provided from the server.
 
 ## Requisites to run the project
